@@ -13,7 +13,6 @@ function App() {
   })
 
   return (
-    <> hello
       <BrowserRouter>
         {
           loader ? <Loader /> : <Routes>
@@ -21,7 +20,6 @@ function App() {
           </Routes>
         }
       </BrowserRouter>
-    </>
   )
 }
 
