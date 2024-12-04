@@ -13,13 +13,15 @@ function App() {
   })
 
   return (
-    <BrowserRouter>
-      {
-        loader ? <Loader /> : <Routes>
-          <Route path='/' element={<LandingPage />}></Route>
-        </Routes>
-      }
-    </BrowserRouter>
+    <> hello
+      <BrowserRouter>
+        {
+          loader ? <Loader /> : <Routes>
+            <Route path='/' element={<LandingPage />}></Route>
+          </Routes>
+        }
+      </BrowserRouter>
+    </>
   )
 }
 
