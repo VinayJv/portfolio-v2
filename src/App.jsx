@@ -8,9 +8,9 @@ import Loader from './components/Loader/Loader';
 function App() {
   const [loader, setLoader] = useState(true);
 
-  // useEffect(() => {
-  //   setTimeout(() => setLoader(false), 3200);
-  // })
+  useEffect(() => {
+    setTimeout(() => setLoader(false), 3800);
+  })
 
   return (
     <BrowserRouter>
