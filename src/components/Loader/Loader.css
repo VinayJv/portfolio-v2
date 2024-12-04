@@ -1,0 +1,70 @@
+.LoaderContainer{
+    position: relative;
+    height: 100dvh;
+    display: flex;
+    align-items: flex-end;
+}
+.LoaderInnerContainer1{
+    animation: curtainfall 1s ease forwards;
+    animation-delay: 2400ms;
+    height: 100%;
+    flex-grow: 1;
+    background-color: black;
+}
+.LoaderInnerContainer2{
+    animation: curtainfall 1s ease forwards;
+    animation-delay: 2600ms;
+    height: 100%;
+    flex-grow: 1;
+    background-color: black;
+}
+.LoaderInnerContainer3{
+    animation: curtainfall 1s ease forwards;
+    animation-delay: 2800ms;
+    height: 100%;
+    flex-grow: 1;
+    background-color: black;
+}
+.TextContainer{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    gap: 16px;
+    color: white;
+}
+.Text1{
+    animation: easefrombottom 1s ease forwards;
+    animation-delay: 400ms;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+.Text2{
+    animation: easefrombottom 1s ease forwards;
+    animation-delay: 800ms;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+.Text3{
+    animation: easefrombottom 1s ease forwards;
+    animation-delay: 1200ms;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+}
+
+@keyframes easefrombottom {
+    to {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+@keyframes curtainfall {
+    to {
+        height: 0%;
+    }
+}
